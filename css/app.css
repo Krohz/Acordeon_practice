@@ -1,0 +1,169 @@
+:root {
+    /*texto color - primario*/
+    --azulOscuro: hsl(238, 29%, 16%);
+    --rojoSuave: hsl(14, 88%, 65%);
+    --light: #FFF;
+
+    /*Gradiante bg*/
+    --violetaSuave: hsl(273, 75%, 66%);
+    --azulSuave: hsl(240, 73%, 65%);
+
+    /*texto color */
+    --azulOscuroGris:hsl(237, 12%, 33%);
+    --azulgris:hsl(240, 6%, 50%);
+
+    /*color divisor*/
+    --divisor:hsl(240, 5%, 91%);
+    /*fuente*/
+    --fuente-principal: 'Kumbh Sans', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.2rem;
+    font-family: var(--fuente-principal);
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+}
+
+h3{
+    font-weight: 400;
+}
+
+[class*="contenedor"] {
+    max-width: 120rem;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.oculto{
+    display: none;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.negrita{
+    font-weight: 700;
+}
+
+/*------START------*/
+.body{
+    background: linear-gradient(to bottom, var(--violetaSuave), var(--azulSuave));
+    min-height: 90rem;
+}
+
+@media (min-width: 768px) {
+    .body{
+        min-height: 100rem;
+    }
+}
+
+.contenido{
+    margin-top: 10rem;
+}
+
+.img-mobile{
+    width: 25rem;
+    position: absolute;
+    top: -100px;
+    z-index: 1;
+    left: 20%;
+}
+
+.shadow-mobile{
+    width: 25rem;
+    position: absolute;
+    top: 10px;
+    z-index: 1;
+    left: 20%;
+}
+
+.img-destop{
+    position: absolute;
+    width: 50rem;
+    top: 5rem;
+    left: -60px;
+
+}
+
+.shadow-destop{
+    position: absolute;
+    width: 50rem;
+    top: 5rem;
+    left: -60px;
+}
+
+.grid-destop{
+    position: relative;
+}
+
+.cuadro{
+    padding: 15rem 3rem 3rem 3rem;
+    position: relative;
+}
+
+@media (min-width: 768px) {
+    .cuadro{
+        position:unset;
+        padding-top: 5rem;
+    }
+}
+
+.titulo{
+    text-align: center;
+}
+.flex-flecha{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: color .3s;
+}
+
+.flex-flecha:hover{
+    cursor: pointer;
+}
+
+.pregunta:hover{
+    color: var(--rojoSuave);
+}
+
+.flecha{
+    width: 1rem;
+}
+
+.card{
+    border-bottom: 1px solid var(--divisor);
+}
+
+.autor{
+    text-align: center;
+    color: var(--light);
+}
+
+/*desktop*/
+.grid-destop{
+    background-color: white;
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+@media (min-width: 850px) {
+    .grid-destop{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        min-height: 50rem;
+    }
+}

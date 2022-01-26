@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="web practice">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Cristian Alvias">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acordeón</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="icon" href="images/favicon-32x32.png">
+</head>
+
+<body class="body">
+    <div class="contenido contenedor">
+        <div class="grid-destop">
+            <div class="imagen-a">
+                <div class="imagen-mobile">
+                    <img class="img-mobile" src="images/illustration-woman-online-mobile.svg" alt="Mobil woman">
+                    <img class="shadow-mobile " src="images/bg-pattern-mobile.svg" alt="shadow woman">
+                </div>
+                <div class="imagen-dstop oculto">
+                    <img class="img-destop" src="images/illustration-woman-online-desktop.svg" alt="Mobil woman">
+                    <img class="shadow-destop" src="images/bg-pattern-desktop.svg" alt="shadow woman">
+                </div>
+            </div>
+            <div class="cuadro">
+                <h1 class="titulo">FAQ</h1>
+                <div class="card">
+                    <div class="flex-flecha">
+                        <h3 class="pregunta">How many team members can i invite?</h3>
+                        <div class="flecha">
+                            <img src="images/icon-arrow-down.svg" alt="Icono flecha">
+                        </div>
+                    </div>
+                    <p class="texto respuesta oculto" id="1">
+                        You can invite up to 2 additional users on the Free plan. There is no limit on team members for
+                        the
+                        Premium plan.
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="flex-flecha">
+                        <h3 class="pregunta">What is the maximum file upload size?</h3>
+                        <div class="flecha">
+                            <img src="images/icon-arrow-down.svg" alt="Icono flecha">
+                        </div>
+                    </div>
+                    <p class="texto respuesta oculto" id="2">
+                        No more than 2GB. All files in your account must fit your allotted storage space.
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="flex-flecha">
+                        <h3 class="pregunta">How do I reset my password?</h3>
+                        <div class="flecha">
+                            <img src="images/icon-arrow-down.svg" alt="Icono flecha">
+                        </div>
+                    </div>
+                    <p class="texto respuesta oculto" id="3">
+                        Click “Forgot password” from the login page or “Change password” from your profile page. A reset
+                        link will be emailed to you.
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="flex-flecha">
+                        <h3 class="pregunta">Can I cancel my subscription?</h3>
+                        <div class="flecha">
+                            <img src="images/icon-arrow-down.svg" alt="Icono flecha">
+                        </div>
+                    </div>
+                    <p class="texto respuesta oculto" id="4">
+                        Yes! Send us a message and we’ll process your request no questions asked.
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="flex-flecha">
+                        <h3 class="pregunta">Do you provide additional support?</h3>
+                        <div class="flecha">
+                            <img src="images/icon-arrow-down.svg" alt="Icono flecha">
+                        </div>
+                    </div>
+                    <p class="texto respuesta oculto" id="5">
+                        Chat and email support is available 24/7. Phone lines are open during normal business hours.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p class="autor">Challenge by Frontend Mentor. Coded by Krohz.</p>
+    <script src="js/apps.js"></script>
+</body>
+
+</html>
